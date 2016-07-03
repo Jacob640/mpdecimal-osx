@@ -2381,8 +2381,8 @@ ac_config_files="$ac_config_files Makefile libmpdec/Makefile tests/Makefile libm
 
 
 LIBSTATIC=libmpdec.a
-LIBSONAME=libmpdec.so.2
-LIBSHARED=libmpdec.so.2.4.1
+LIBSONAME=libmpdec.2.dylib
+LIBSHARED=libmpdec.2.4.1.dylib
 
 
 

@@ -6,8 +6,8 @@ AC_CONFIG_FILES([Makefile libmpdec/Makefile tests/Makefile libmpdec/mpdecimal.h]
 AC_ARG_VAR(MACHINE, [force configuration: x64, uint128, ansi64, ppro, ansi32, ansi-legacy])
 
 LIBSTATIC=libmpdec.a
-LIBSONAME=libmpdec.so.2
-LIBSHARED=libmpdec.so.2.4.1
+LIBSONAME=libmpdec.2.dylib
+LIBSHARED=libmpdec.2.4.1.dylib
 AC_SUBST(LIBSTATIC)
 AC_SUBST(LIBSONAME)
 AC_SUBST(LIBSHARED)

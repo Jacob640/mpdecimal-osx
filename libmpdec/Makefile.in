@@ -53,8 +53,8 @@ $(LIBSTATIC): Makefile $(OBJS)
 	$(RANLIB) $(LIBSTATIC)
 
 $(LIBSHARED): Makefile $(SHARED_OBJS)
-	$(LD) $(MPD_LDFLAGS) -shared -Wl,-soname,$(LIBSONAME) -o $(LIBSHARED) $(SHARED_OBJS) -lm
-	ln -sf $(LIBSHARED) libmpdec.so
+	$(LD) $(MPD_LDFLAGS) -shared -Wl,-install_name,$(LIBSONAME) -o $(LIBSHARED) $(SHARED_OBJS) -lm
+	ln -sf $(LIBSHARED) $(LIBSONAME)
 	ln -sf $(LIBSHARED) $(LIBSONAME)
 
 
